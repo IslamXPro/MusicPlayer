@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/black"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/like_playmc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/like_img"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/artist"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/back1"
+            app:layout_constraintTop_toBottomOf="@id/like_playmc"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <TextView
+                android:id="@+id/like_song_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Greates"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:id="@+id/like_art_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sea"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
